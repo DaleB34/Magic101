@@ -8,6 +8,7 @@ public class Main {
         Griffin peter = new Griffin("Peter", "Griffin", "Normal", 768, 220, 10, 40);
         Griffin bob = new Griffin("Bob", "Griffin", "Normal", 72, 500, 2, 20);
 
-        
+        Unicorn tspark = new Unicorn("Twilight Sparkle", "Unicorn", "Fairy", 300, 181, 10, 1000);
+        Unicorn bstall = new Unicorn("Butt Stallion", "Binicorn", "Fairy", 100, 78, 20, 10);
     }
 }

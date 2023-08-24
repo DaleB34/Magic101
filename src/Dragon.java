@@ -9,6 +9,14 @@ public class Dragon extends MagicAnimal
         this.scalePwr = scalePwr;
     }
 
+    //Brain Methods
+    public void breatheFire(MagicAnimal a)
+    {
+
+    }
+
+
+    //toString
     @Override
     public String toString() {
         return super.toString() + "\n"
