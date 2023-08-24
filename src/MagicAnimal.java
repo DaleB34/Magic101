@@ -22,6 +22,28 @@ public class MagicAnimal {
         weight = 10;
     }
 
+    //Getters
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getElement() {
+        return element;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
 
     //Brain Methods
 
