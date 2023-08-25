@@ -44,6 +44,17 @@ public class MagicAnimal {
         return weight;
     }
 
+    //Setters
+    public void setSpeed(int n)
+    {
+        speed = n;
+    }
+
+    public void setWeight(int n)
+    {
+        //not sure if this will be fully used
+        weight = n;
+    }
 
     //Brain Methods
 
