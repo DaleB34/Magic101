@@ -57,7 +57,27 @@ public class MagicAnimal {
     }
 
     //Brain Methods
-
+    public void feed(int pieces)
+    {
+        //will have validation to make sure value isn't less than 0
+        //also have validation to make sure they don't make animal explode with 1000 pieces of food
+        //pieces of food are full steaks like the ones from cartoons
+        if (pieces <= 5)
+        {
+            //I HATE DOUBLE MULTIPLICATION!!!!
+            setSpeed( (int) (getSpeed() * 0.07));
+        }
+        else if (pieces <= 20)
+        {
+            //increase speed by a tenth of how many pieces have been fed
+            setSpeed( (int) (getSpeed() * (0.03 * pieces)));
+        }
+        else //pieces fed greater than 20
+        {
+            //decrease speed by half a percent of the amount of pieces fed
+            setSpeed( (int) (getSpeed() * (1- (0.005 * pieces))));
+        }
+    }
 
     //toString
 
