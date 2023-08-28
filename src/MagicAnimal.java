@@ -59,9 +59,9 @@ public class MagicAnimal {
     //Brain Methods
     public void feed(int pieces)
     {
+        //feed the animal a piece of steak seasoned with enhancing substances via magic
         //will have validation to make sure value isn't less than 0
         //also have validation to make sure they don't make animal explode with 1000 pieces of food
-        //pieces of food are full steaks like the ones from cartoons
         if (pieces <= 5)
         {
             //I HATE DOUBLE MULTIPLICATION!!!!
@@ -79,8 +79,16 @@ public class MagicAnimal {
         }
     }
 
-    //toString
+    public Double attack()
+    {
+        //returns amount of damage done
+        //multiplying by 1.11 because it takes 200 pounds of force to knock out someone
+        //and the average body weight is 180 pounds, so 200/180 = 1.11
+        return weight * 1.11;
+    }
 
+
+    //toString
 
     @Override
     public String toString() {
