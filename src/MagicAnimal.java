@@ -3,9 +3,9 @@ public class MagicAnimal {
     public String type;
     public String element;
     public int speed; // in mmph (magical miles per hour)
-    public int weight; //in lbs
+    public Double weight; //in lbs
 
-    public MagicAnimal(String name, String type, String element, int speed, int weight)
+    public MagicAnimal(String name, String type, String element, int speed, Double weight)
     {
         this.name = name;
         this.type = type;
@@ -18,8 +18,8 @@ public class MagicAnimal {
         this.name = name;
         type = "Unknown";
         element = "Normal";
-        speed = 10;
-        weight = 10;
+        speed = 0;
+        weight = 0.0;
     }
 
     //Getters
@@ -40,7 +40,7 @@ public class MagicAnimal {
         return speed;
     }
 
-    public int getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
@@ -50,7 +50,7 @@ public class MagicAnimal {
         speed = n;
     }
 
-    public void setWeight(int n)
+    public void setWeight(Double n)
     {
         //not sure if this will be fully used
         weight = n;

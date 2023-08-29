@@ -3,7 +3,7 @@ public class Griffin extends MagicAnimal
     private int wings;
     private int talonShrp;
 
-    public Griffin(String name, String type, String element, int speed, int weight, int wings, int talonShrp)
+    public Griffin(String name, String type, String element, int speed, Double weight, int wings, int talonShrp)
     {
         super(name, type, element, speed, weight);
         this.wings = wings;
