@@ -3,15 +3,15 @@ public class MagicAnimal {
     public String type;
     public String element;
     public int speed; // in mmph (magical miles per hour)
-    public Double weight; //in lbs
+    public Double health; //in lbs
 
-    public MagicAnimal(String name, String type, String element, int speed, Double weight)
+    public MagicAnimal(String name, String type, String element, int speed, Double health)
     {
         this.name = name;
         this.type = type;
         this.element = element;
         this.speed = speed;
-        this.weight = weight;
+        this.health = health;
     }
 
     public MagicAnimal(String name) {
@@ -19,7 +19,7 @@ public class MagicAnimal {
         type = "Unknown";
         element = "Normal";
         speed = 0;
-        weight = 0.0;
+        health = 0.0;
     }
 
     //Getters
@@ -40,8 +40,8 @@ public class MagicAnimal {
         return speed;
     }
 
-    public Double getWeight() {
-        return weight;
+    public Double getHealth() {
+        return health;
     }
 
     //Setters
@@ -50,10 +50,10 @@ public class MagicAnimal {
         speed = n;
     }
 
-    public void setWeight(Double n)
+    public void setHealth(Double n)
     {
         //not sure if this will be fully used
-        weight = n;
+        health = n;
     }
 
     //Brain Methods
@@ -89,7 +89,7 @@ public class MagicAnimal {
     {
         //multiplying by 1.11 because it takes 200 pounds of force to knock out someone
         //and the average body weight is 180 pounds, so 200/180 = 1.11
-        return weight * 1.1;
+        return health * 1.1;
     }
 
 
@@ -100,6 +100,6 @@ public class MagicAnimal {
         return  "Name: " + name + " The " + type + "\n" +
                 "Element: " + element + "\n" +
                 "Speed: " + speed + "mmph\n" +
-                "Weight: " + weight + "lbs";
+                "Health Points: " + health + "hp";
     }
 }

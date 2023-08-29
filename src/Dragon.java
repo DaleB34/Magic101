@@ -2,9 +2,9 @@ public class Dragon extends MagicAnimal
 {
     private int wings;
     private int scalePwr; //how hard the scales are (defense)
-    public Dragon(String name, String type, String element, int speed, Double weight, int wings, int scalePwr)
+    public Dragon(String name, String type, String element, int speed, Double health, int wings, int scalePwr)
     {
-        super(name, type, element, speed, weight);
+        super(name, type, element, speed, health);
         this.wings = wings;
         this.scalePwr = scalePwr;
     }
