@@ -10,6 +10,12 @@ public class Griffin extends MagicAnimal
         this.talonShrp = talonShrp;
     }
 
+    //Brain Methods
+    public double wingSlap()
+    {
+        return (wings * 0.1) * health;
+    }
+
     @Override
     public String toString()
     {
