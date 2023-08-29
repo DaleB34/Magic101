@@ -10,6 +10,13 @@ public class Dragon extends MagicAnimal
     }
 
     //Brain Methods
+
+    @Override
+    public Double attack()
+    {
+        return breatheFire() + wingSlap();
+    }
+
     public Double breatheFire()
     {
         return breathPwr * (health/2);
