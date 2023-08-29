@@ -81,10 +81,15 @@ public class MagicAnimal {
 
     public Double attack()
     {
-        //returns amount of damage done
+        //returns amount of damage done from animal's attacks
+        return punch();
+    }
+
+    public Double punch()
+    {
         //multiplying by 1.11 because it takes 200 pounds of force to knock out someone
         //and the average body weight is 180 pounds, so 200/180 = 1.11
-        return weight * 1.11;
+        return weight * 1.1;
     }
 
 
