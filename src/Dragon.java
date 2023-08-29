@@ -10,9 +10,9 @@ public class Dragon extends MagicAnimal
     }
 
     //Brain Methods
-    public void breatheFire(MagicAnimal a)
+    public Double breatheFire()
     {
-
+        return breathPwr * (health/2);
     }
 
 
