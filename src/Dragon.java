@@ -15,6 +15,11 @@ public class Dragon extends MagicAnimal
         return breathPwr * (health/2);
     }
 
+    public Double wingSlap()
+    {
+        return (wings * 0.1) * health;
+    }
+
 
     //toString
     @Override
