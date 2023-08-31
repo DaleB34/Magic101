@@ -16,6 +16,10 @@ public class Griffin extends MagicAnimal
         return (wings * 0.1) * health;
     }
 
+    public double scratch()
+    {
+        return (talonShrp * 0.13) * health;
+    }
 
     @Override
     public String toString()
