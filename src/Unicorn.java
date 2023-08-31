@@ -17,6 +17,11 @@ public class Unicorn extends MagicAnimal
         return (hornShrp * 0.37) * health;
     }
 
+    public double rBeam()
+    {
+        return (heartPurity * 0.21) * health;
+    }
+
     @Override
     public String toString()
     {
