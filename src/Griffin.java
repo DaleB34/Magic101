@@ -28,6 +28,7 @@ public class Griffin extends MagicAnimal
         return (scratch() + wingSlap()) * 1.001 ;
     }
 
+
     @Override
     public String toString()
     {

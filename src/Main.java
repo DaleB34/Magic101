@@ -12,5 +12,6 @@ public class Main {
         Unicorn bstall = new Unicorn("Butt Stallion", "Binicorn", "Fairy", 100, 78.0, 20, 10);
 
 
+
     }
 }
