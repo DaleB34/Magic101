@@ -5,7 +5,7 @@ public class MagicAnimal {
     public int speed; // in mmph (magical miles per hour)
     public Double health; //in lbs
 
-    public MagicAnimal(String name, String type, String element, int speed, Double health)
+    public MagicAnimal(String name, String type, String element, int speed, double health)
     {
         this.name = name;
         this.type = type;
@@ -40,7 +40,7 @@ public class MagicAnimal {
         return speed;
     }
 
-    public Double getHealth() {
+    public double getHealth() {
         return health;
     }
 
@@ -50,9 +50,9 @@ public class MagicAnimal {
         speed = n;
     }
 
-    public void setHealth(Double n)
+    public void setHealth(double n)
     {
-        //not sure if this will be fully used
+        //not sure if this will be used
         health = n;
     }
 
@@ -79,17 +79,17 @@ public class MagicAnimal {
         }
     }
 
-    public Double attack()
+    public double attack()
     {
         //returns amount of damage done from animal's attacks
         return punch();
     }
 
-    public Double punch()
+    public double punch()
     {
         //multiplying by 1.11 because it takes 200 pounds of force to knock out someone
         //and the average body weight is 180 pounds, so 200/180 = 1.11
-        return health * 1.1;
+        return getHealth() * 1.1;
     }
 
 

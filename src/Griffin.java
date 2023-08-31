@@ -3,7 +3,7 @@ public class Griffin extends MagicAnimal
     private int wings;
     private int talonShrp;
 
-    public Griffin(String name, String type, String element, int speed, Double health, int wings, int talonShrp)
+    public Griffin(String name, String type, String element, int speed, double health, int wings, int talonShrp)
     {
         super(name, type, element, speed, health);
         this.wings = wings;
@@ -15,6 +15,7 @@ public class Griffin extends MagicAnimal
     {
         return (wings * 0.1) * health;
     }
+
 
     @Override
     public String toString()

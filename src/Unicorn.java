@@ -3,7 +3,7 @@ public class Unicorn extends MagicAnimal
     private int hornShrp;
     private int heartPurity;
 
-    public Unicorn(String name, String type, String element, int speed, Double health, int hornShrp, int heartPurity)
+    public Unicorn(String name, String type, String element, int speed, double health, int hornShrp, int heartPurity)
     {
         super(name, type, element, speed, health);
         this.hornShrp = hornShrp;

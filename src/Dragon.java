@@ -2,7 +2,7 @@ public class Dragon extends MagicAnimal
 {
     private int wings;
     private int breathPwr; //how strong their breath is
-    public Dragon(String name, String type, String element, int speed, Double health, int wings, int breathPwr)
+    public Dragon(String name, String type, String element, int speed, double health, int wings, int breathPwr)
     {
         super(name, type, element, speed, health);
         this.wings = wings;
@@ -12,17 +12,17 @@ public class Dragon extends MagicAnimal
     //Brain Methods
 
     @Override
-    public Double attack()
+    public double attack()
     {
         return breatheFire() + wingSlap();
     }
 
-    public Double breatheFire()
+    public double breatheFire()
     {
         return breathPwr * (health/2);
     }
 
-    public Double wingSlap()
+    public double wingSlap()
     {
         return (wings * 0.1) * health;
     }
