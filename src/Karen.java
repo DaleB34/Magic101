@@ -17,5 +17,15 @@ public class Karen
         count++;
     }
 
+    public String toString()
+    {
+        //print data of all racers
+        String output = "";
+        for(MagicAnimal a : racers)
+        {
+            output+= "\n" + a + "\n"; //formatting yayayayay
+        }
+        return output;
 
+    }
 }
