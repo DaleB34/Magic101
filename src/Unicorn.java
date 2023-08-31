@@ -10,6 +10,13 @@ public class Unicorn extends MagicAnimal
         this.heartPurity = heartPurity;
     }
 
+    //brain methods
+
+    public double stab()
+    {
+        return (hornShrp * 0.37) * health;
+    }
+
     @Override
     public String toString()
     {
