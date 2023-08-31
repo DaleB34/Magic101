@@ -23,6 +23,12 @@ public class Unicorn extends MagicAnimal
     }
 
     @Override
+    public double attack()
+    {
+        return rBeam() + stab();
+    }
+
+    @Override
     public String toString()
     {
         return super.toString() + "\n"
