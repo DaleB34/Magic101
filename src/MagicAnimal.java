@@ -99,7 +99,7 @@ public class MagicAnimal {
     public String toString() {
         return  "Name: " + name + " The " + type + "\n" +
                 "Element: " + element + "\n" +
-                "Speed: " + speed + "mmph\n" +
-                "Health Points: " + health + "hp";
+                "Speed: " + speed + "mMph\n" +
+                "Health Points: " + health + " Health Points";
     }
 }
