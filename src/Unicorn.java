@@ -28,6 +28,7 @@ public class Unicorn extends MagicAnimal
         return rBeam() + stab();
     }
 
+
     @Override
     public String toString()
     {
