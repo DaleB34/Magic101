@@ -22,6 +22,13 @@ public class Griffin extends MagicAnimal
     }
 
     @Override
+    public double attack()
+    {
+        //i felt like griffins needed a little buff
+        return (scratch() + wingSlap()) * 1.001 ;
+    }
+
+    @Override
     public String toString()
     {
         return super.toString() + "\n"
