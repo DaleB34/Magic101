@@ -29,6 +29,13 @@ public class Dragon extends MagicAnimal
 
     //Setters
 
+    @Override
+    public void setInfo()
+    {
+        setWings((int) ((Math.random() * 10) + wings));
+        setBreathPwr(0);
+    }
+
     public void setWings(int w)
     {
         wings = w;
@@ -38,6 +45,7 @@ public class Dragon extends MagicAnimal
     {
         breathPwr = b;
     }
+
 
     //Getters
 

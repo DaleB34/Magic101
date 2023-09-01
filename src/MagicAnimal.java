@@ -2,7 +2,7 @@ public class MagicAnimal {
     public String name;
     public String type;
     public String element;
-    public int speed; // in mmph (magical miles per hour)
+    public int speed; // in mMph (magical miles per hour)
     public Double health; //in lbs
 
     public MagicAnimal(String name, String type, String element, int speed, double health)
@@ -54,6 +54,14 @@ public class MagicAnimal {
     {
         //not sure if this will be used
         health = n;
+    }
+
+    public void setInfo()
+    {
+        //needed a method to override in other classes to change variable values
+        //under the assumption that they are MagicAnimals
+        setSpeed(speed * 10);
+        setHealth(health * 10);
     }
 
     //Brain Methods
