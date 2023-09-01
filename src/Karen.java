@@ -52,8 +52,59 @@ public class Karen
 
     public void race(MagicAnimal a1, MagicAnimal a2)
     {
+        //Animals attack each other one time at the very start, if either animal's health drops below 0, the last animal standing wins
+        //otherwise, whichever animal is faster wins
 
-    }
+        if(a1.getSpeed() > a2.getSpeed()) //if a1 is faster, they get to attack first
+        {
+            System.out.println(a1.getName() + " and " + a2.getName() + " begin the race but have a quick brawl at the beginning!");
+            System.out.println(a1.getName() + " does " + a1.attack() + " damage to " + a2.getName()  + ", leaving them at " + (a2.getHealth() - a1.attack()) + " health" );
+
+            if(a2.getHealth() < 0)//a1 wins from elimination
+            {
+                System.out.println("With that attack, " + a2.getName() + " is left behind at the starting line, allowing " + a1.getName() + " to win the race!!!!");
+            }
+            else //a2 has not lost all its health yet and wins by elimination
+            {
+                System.out.println(a2.getName() + " does " + a2.attack() + " damage to " + a1.getName()  + ", leaving them at " + (a1.getHealth() - a2.attack()) + " health" );
+                if(a1.getHealth() < 0) //a2 wins from elimination
+                {
+                    System.out.println("With that attack, " + a1.getName() + " is left behind at the starting line, allowing " + a2.getName() + " to win the race!!!!");
+                }
+                else //ends here with a1 winning because starting if statement determines who is faster already
+                {
+                    System.out.println("Both racers leave the fight wounded, but " + a1.getName() + " comes out on top!!");
+                }
+            }
+        }// end a1 faster
+
+        else //a2 is faster
+        {
+            System.out.println(a2.getName() + " and " + a1.getName() + " begin the race but have a quick brawl at the beginning!");
+            System.out.println(a2.getName() + " does " + a2.attack() + " damage to " + a1.getName()  + ", leaving them at " + (a1.getHealth() - a2.attack()) + " health" );
+
+            if(a1.getHealth() < 0) //a2 wins from elimination
+            {
+                System.out.println("With that attack, " + a1.getName() + " is left behind at the starting line, allowing " + a2.getName() + " to win the race!!!!");
+            }
+            else //a1 has not lost all its health yet and wins by elimination
+            {
+                System.out.println(a1.getName() + " does " + a1.attack() + " damage to " + a2.getName()  + ", leaving them at " + (a2.getHealth() - a1.attack()) + " health" );
+                if(a2.getHealth() < 0)//a1 wins from elimination
+                {
+                    System.out.println("With that attack, " + a2.getName() + " is left behind at the starting line, allowing " + a1.getName() + " to win the race!!!!");
+                }
+                else //ends here with a2 winning because starting if statement determines who is faster already
+                {
+                    System.out.println("Both racers leave the fight wounded, but " + a1.getName() + " comes out on top!!");
+                }
+            }
+        }//end a2 faster
+
+
+
+
+    }//end race
 
 
 
