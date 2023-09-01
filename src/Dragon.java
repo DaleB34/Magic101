@@ -27,6 +27,30 @@ public class Dragon extends MagicAnimal
         return (wings * 0.1) * health;
     }
 
+    //Setters
+
+    public void setWings(int w)
+    {
+        wings = w;
+    }
+
+    public void setBreathPwr(int b)
+    {
+        breathPwr = b;
+    }
+
+    //Getters
+
+    public int getWings()
+    {
+        return wings;
+    }
+
+    public int getBreathPwr()
+    {
+        return breathPwr;
+    }
+
 
     //toString
     @Override
