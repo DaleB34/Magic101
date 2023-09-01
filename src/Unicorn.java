@@ -28,6 +28,25 @@ public class Unicorn extends MagicAnimal
         return rBeam() + stab();
     }
 
+    //getters
+    public int getHornShrp() {
+        return hornShrp;
+    }
+
+    public int getHeartPurity() {
+        return heartPurity;
+    }
+
+    //setters
+
+
+    public void setHornShrp(int hornShrp) {
+        this.hornShrp = hornShrp;
+    }
+
+    public void setHeartPurity(int heartPurity) {
+        this.heartPurity = heartPurity;
+    }
 
     @Override
     public String toString()
