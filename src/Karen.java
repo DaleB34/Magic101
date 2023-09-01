@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 public class Karen
 {
     //mostly going off base structure of Farmer from Old MacDonald
@@ -44,7 +45,16 @@ public class Karen
         }
 
 
+
+
+    }//end of start()
+
+
+    public void race(MagicAnimal a1, MagicAnimal a2)
+    {
+
     }
+
 
 
     public void addRacer(MagicAnimal a)
