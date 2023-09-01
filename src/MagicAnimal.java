@@ -4,6 +4,10 @@ public class MagicAnimal {
     public String element;
     public int speed; // in mMph (magical miles per hour)
     public Double health; //in lbs
+    public static int dCount = 0;
+    public static int gCount = 0;
+    public static int uCount = 0;
+    public static int aCount= 0;
 
     public MagicAnimal(String name, String type, String element, int speed, double health)
     {
@@ -12,6 +16,7 @@ public class MagicAnimal {
         this.element = element;
         this.speed = speed;
         this.health = health;
+        aCount++;
     }
 
     public MagicAnimal(String name) {
@@ -20,6 +25,7 @@ public class MagicAnimal {
         element = "Normal";
         speed = 0;
         health = 0.0;
+        aCount++;
     }
 
     //Getters
@@ -56,7 +62,7 @@ public class MagicAnimal {
         health = n;
     }
 
-    public void setInfo()
+    public void setRandom()
     {
         //needed a method to override in other classes to change variable values
         //under the assumption that they are MagicAnimals

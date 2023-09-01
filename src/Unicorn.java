@@ -8,6 +8,19 @@ public class Unicorn extends MagicAnimal
         super(name, type, element, speed, health);
         this.hornShrp = hornShrp;
         this.heartPurity = heartPurity;
+        uCount++;
+    }
+
+    public Unicorn(String name)
+    {
+        super(name);
+        type = "Unknown";
+        element = "Normal";
+        speed = 0;
+        health = 0.0;
+        hornShrp = 0;
+        heartPurity = 0;
+        uCount++;
     }
 
     //brain methods
@@ -40,7 +53,7 @@ public class Unicorn extends MagicAnimal
     //setters
 
     @Override
-    public void setInfo()
+    public void setRandom()
     {
         setHornShrp((int) ((Math.random() * 10) + hornShrp));
         setHeartPurity((int) ((Math.random() * 10) + heartPurity));

@@ -8,6 +8,19 @@ public class Griffin extends MagicAnimal
         super(name, type, element, speed, health);
         this.wings = wings;
         this.talonShrp = talonShrp;
+        gCount++;
+    }
+
+    public Griffin(String name)
+    {
+        super(name);
+        type = "Unknown";
+        element = "Normal";
+        speed = 0;
+        health = 0.0;
+        wings = 0;
+        talonShrp = 0;
+        gCount++;
     }
 
     //Brain Methods
@@ -32,7 +45,7 @@ public class Griffin extends MagicAnimal
 
     //setters
     @Override
-    public void setInfo()
+    public void setRandom()
     {
         setWings((int) ((Math.random() * 10) + wings));
         setTalonShrp((int) ((Math.random() * 10) + talonShrp));

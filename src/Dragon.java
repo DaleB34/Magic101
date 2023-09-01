@@ -7,6 +7,19 @@ public class Dragon extends MagicAnimal
         super(name, type, element, speed, health);
         this.wings = wings;
         this.breathPwr = breathPwr;
+        dCount++;
+    }
+
+    public Dragon(String name)
+    {
+        super(name);
+        type = "Unknown";
+        element = "Normal";
+        speed = 0;
+        health = 0.0;
+        wings = 0;
+        breathPwr = 0;
+        dCount++;
     }
 
     //Brain Methods
@@ -30,7 +43,7 @@ public class Dragon extends MagicAnimal
     //Setters
 
     @Override
-    public void setInfo()
+    public void setRandom()
     {
         setWings((int) ((Math.random() * 10) + wings));
         setBreathPwr((int) ((Math.random() * 10) + breathPwr));
