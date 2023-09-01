@@ -33,7 +33,7 @@ public class Dragon extends MagicAnimal
     public void setInfo()
     {
         setWings((int) ((Math.random() * 10) + wings));
-        setBreathPwr(0);
+        setBreathPwr((int) ((Math.random() * 10) + breathPwr));
     }
 
     public void setWings(int w)
