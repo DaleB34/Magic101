@@ -39,6 +39,12 @@ public class Unicorn extends MagicAnimal
 
     //setters
 
+    @Override
+    public void setInfo()
+    {
+        setHornShrp((int) ((Math.random() * 10) + hornShrp));
+        setHeartPurity((int) ((Math.random() * 10) + heartPurity));
+    }
 
     public void setHornShrp(int hornShrp) {
         this.hornShrp = hornShrp;

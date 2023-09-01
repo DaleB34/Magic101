@@ -31,6 +31,13 @@ public class Griffin extends MagicAnimal
     }
 
     //setters
+    @Override
+    public void setInfo()
+    {
+        setWings((int) ((Math.random() * 10) + wings));
+        setTalonShrp((int) ((Math.random() * 10) + talonShrp));
+    }
+
     public void setWings(int wings) {
         this.wings = wings;
     }
