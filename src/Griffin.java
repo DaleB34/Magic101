@@ -21,6 +21,24 @@ public class Griffin extends MagicAnimal
         return (talonShrp * 0.13) * health;
     }
 
+    //getters
+    public int getWings() {
+        return wings;
+    }
+
+    public int getTalonShrp() {
+        return talonShrp;
+    }
+
+    //setters
+    public void setWings(int wings) {
+        this.wings = wings;
+    }
+
+    public void setTalonShrp(int talonShrp) {
+        this.talonShrp = talonShrp;
+    }
+
     @Override
     public double attack()
     {
