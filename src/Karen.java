@@ -16,18 +16,32 @@ public class Karen
 
     public void start()
     {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Here are all the racers you can choose from: " + toString());
 
         //select 1st animal
-        System.out.println("Please enter the first number of the animal you want to race: ");
+        System.out.println("Please enter the number of the first animal you want to race: ");
         int a1 = sc.nextInt();
+
+        //validation to make sure user does not select elements not in the range of the list
         while(a1 < 1 || a1 > racers.length)
         {
-            System.out.println("Invalid Answer\nPlease enter the first number of the animal you want to race:");
+            System.out.println("Invalid Answer\nPlease enter the number of the first animal you want to race:");
             a1 = sc.nextInt();
         }
 
+
+        //select 2nd animal
+        System.out.println("Please enter the number of the second animal you want to race: ");
+        int a2 = sc.nextInt();
+
+        //validation to prevent animal from racing itself
+        while (a2 < 1 || a2 > racers.length || a2 == a1)
+        {
+            System.out.println("Invalid Answer\nPlease enter the second number of the animal you want to race:");
+            a2 = sc.nextInt();
+        }
 
 
     }
