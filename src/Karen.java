@@ -32,12 +32,6 @@ public class Karen
 
     }
 
-    public void race(MagicAnimal a1, MagicAnimal a2)
-    {
-
-
-
-    }
 
     public void addRacer(MagicAnimal a)
     {
